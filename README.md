@@ -5,7 +5,7 @@ Its purpose is to demonstrate how to setup an [Arquillian](http://arquillian.org
 
 The idea is that we have a parent project which hosts both the project which is under testing and the project which contains the tests. Every time we push something on the repository, the corresponding build is triggered on [Travis CI](https://travis-ci.org/).
 
-## AeroGear Controller Demo Functional Test
+## AeroGear Controller Demo Test
 This project contains the functional test for the [AeroGear Controller Demo](https://github.com/tolis-e/aerogear-controller-demo-travis-ci/blob/master/aerogear-controller-demo) project.
 
 The [Arquillian](http://arquillian.org/) testing platform is used to enable the testing automation. [Arquillian](http://arquillian.org/) integrates transparently with the testing framework which is JUnit in this case.

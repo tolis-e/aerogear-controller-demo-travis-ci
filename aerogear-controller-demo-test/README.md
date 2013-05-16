@@ -1,4 +1,4 @@
-# AeroGear Controller Demo Functional Test
+# AeroGear Controller Demo Test
 This project contains the functional test for the [AeroGear Controller Demo](https://github.com/tolis-e/aerogear-controller-demo-travis-ci/blob/master/aerogear-controller-demo) project.
 
 The [Arquillian](http://arquillian.org/) testing platform is used to enable the testing automation. [Arquillian](http://arquillian.org/) integrates transparently with the testing framework which is JUnit in this case.
