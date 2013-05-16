@@ -17,11 +17,11 @@ The AeroGear Controller Demo Functional Test defines the three core aspects need
 - deployment — the process of dispatching an artifact to a container
 - archive — a packaged assembly of code, configuration and resources
 
-The container's configuration resides in the [Arquillian XML](https://github.com/tolis-e/aerogear-controller-demo-travis-ci/blob/master/aerogear-controller-demo-test/src/test/resources/arquillian.xml) configuration file while the deployment and the archive are defined in the [Deployments](https://github.com/tolis-e/tolis-e/aerogear-controller-demo-travis-ci/blob/master/aerogear-controller-demo-test/src/test/java/org/jboss/aerogear/controller/demo/test/Deployments.java) file.
+The container's configuration resides in the [Arquillian XML](https://github.com/tolis-e/aerogear-controller-demo-travis-ci/blob/master/aerogear-controller-demo-test/src/test/resources/arquillian.xml) configuration file while the deployment and the archive are defined in the [Deployments](https://github.com/tolis-e/aerogear-controller-demo-travis-ci/blob/master/aerogear-controller-demo-test/src/test/java/org/jboss/aerogear/controller/demo/test/Deployments.java) file.
 
 The test case is dispatched to the container's environment through coordination with ShrinkWrap, which is used to declaratively define a custom Java EE archive that encapsulates the test class and its dependent resources. [Arquillian](http://arquillian.org/) packages the ShrinkWrap defined archive at runtime and deploys it to the target container. It then negotiates the execution of the test methods and captures the test results using remote communication with the server. Finally, [Arquillian](http://arquillian.org/) undeploys the test archive.
 
-The [POM](https://github.com/tolis-e/tolis-e/aerogear-controller-demo-travis-ci/blob/master/aerogear-controller-demo-test/pom.xml) file contains two profiles:
+The [POM](https://github.com/tolis-e/aerogear-controller-demo-travis-ci/blob/master/aerogear-controller-demo-test/pom.xml) file contains two profiles:
 
 * arq-jboss-managed — managed container 
 * arq-jboss-remote — remote container
