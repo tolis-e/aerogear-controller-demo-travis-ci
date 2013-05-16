@@ -1,9 +1,11 @@
 ## Aerogear Controller Demo Travis CI
-This project contains the [Aerogear Controller Demo](https://github.com/tolis-e/aerogear-controller-demo-travis-ci/blob/master/aerogear-controller-demo) and the [Aerogear Controller Demo Test](https://github.com/tolis-e/aerogear-controller-demo-travis-ci/blob/master/aerogear-controller-demo-test) subprojects. The [Aerogear Controller Demo Test](https://github.com/tolis-e/aerogear-controller-demo-travis-ci/blob/master/aerogear-controller-demo-test) project contains the functional test for the [Aerogear Controller Demo](https://github.com/tolis-e/aerogear-controller-demo-travis-ci/blob/master/aerogear-controller-demo) project. 
+This project contains the [Aerogear Controller Demo](https://github.com/tolis-e/aerogear-controller-demo-travis-ci/blob/master/aerogear-controller-demo) and the [Aerogear Controller Demo Test](https://github.com/tolis-e/aerogear-controller-demo-travis-ci/blob/master/aerogear-controller-demo-test) subprojects. Its purpose is to demonstrate how to setup an [Arquillian](http://arquillian.org/) test to run on [Travis CI](https://travis-ci.org/). The [Aerogear Controller Demo Test](https://github.com/tolis-e/aerogear-controller-demo-travis-ci/blob/master/aerogear-controller-demo-test) project contains the functional test for the [Aerogear Controller Demo](https://github.com/tolis-e/aerogear-controller-demo-travis-ci/blob/master/aerogear-controller-demo) project. 
 
-Its purpose is to demonstrate how to setup an [Arquillian](http://arquillian.org/) test to run on [Travis CI](https://travis-ci.org/).
+The idea is that we have a parent project which hosts both the project which is under testing and the project which contains the tests. Every time we push something on the repository, the corresponding build is triggered on [Travis CI](https://travis-ci.org/) and we can verify whether the tests passed or not.
 
-The idea is that we have a parent project which hosts both the project which is under testing and the project which contains the tests. Every time we push something on the repository, the corresponding build is triggered on [Travis CI](https://travis-ci.org/).
+[![Build Status](https://travis-ci.org/tolis-e/aerogear-controller-demo-travis-ci.png?branch=master)](https://travis-ci.org/tolis-e/aerogear-controller-demo-travis-ci)
+
+We are using the X Virtual Framebuffer to run tests that require a web browser, on [Travis CI](https://travis-ci.org/).
 
 ## AeroGear Controller Demo Test
 This project contains the functional test for the [AeroGear Controller Demo](https://github.com/tolis-e/aerogear-controller-demo-travis-ci/blob/master/aerogear-controller-demo) project.
